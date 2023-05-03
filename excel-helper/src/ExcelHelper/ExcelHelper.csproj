@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>OpenText.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyName>OpenText.$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="HP.SV.DotNetRuleApi">
+      <HintPath>$(SV_BIN_FOLDER)\HP.SV.DotNetRuleApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>$(SV_BIN_FOLDER)\NPOI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>$(SV_BIN_FOLDER)\NPOI.OOXML.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>$(SV_BIN_FOLDER)\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>$(SV_BIN_FOLDER)\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
