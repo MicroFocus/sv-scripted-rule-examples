@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>OpenText.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyName>OpenText.$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="HP.SV.DotNetRuleApi">
+      <HintPath>$(SV_BIN_FOLDER)\HP.SV.DotNetRuleApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
